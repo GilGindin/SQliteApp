@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHeader"
+        android:layout_margin="10dp"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text="Add Product"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:layout_below="@+id/textViewHeader"
+        android:layout_margin="10dp"
+        android:inputType="textShortMessage"
+        android:textSize="25sp"
+        android:hint="Name.."/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPrice"
+        android:layout_below="@+id/editTextName"
+        android:layout_margin="10dp"
+        android:inputType="textShortMessage"
+        android:textSize="25sp"
+        android:hint="Price.."/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="Cancel"
+        android:onClick="buttonCancel_onClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:text="Add"
+        android:onClick="buttonAdd_onClick"/>
+
+</RelativeLayout>
